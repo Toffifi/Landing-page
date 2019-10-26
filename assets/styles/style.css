@@ -1,0 +1,152 @@
+@import "./reset.css" all;
+@import "./media.css" all;
+
+
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+}
+header{
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    display: grid;
+    grid-template-rows: 13% 5% 70%;
+}
+.top{
+    display: grid;
+    margin-top: 8vh;
+    height: 5vh;
+    grid-template-columns: 31% 44% 25%;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo span{
+    color:#5b4295;
+}
+.navigator{
+    display: grid;
+    justify-items: end;
+    font-size: 0.8em;
+}
+.nav{
+    display: flex;
+    margin-right: 0.5em;
+}
+.nav li{
+    margin-left: 1.5em;
+}
+.nav1{
+    display: none;
+}
+.sing ul{
+    display: flex;
+    font-size: 0.8em;
+    margin-left: 4em;
+    align-items: center;
+}
+.fa-sign-in-alt{
+    color: #582c7e;
+}
+.sign li:first-child:hover{
+    color:#5f2966;
+    font-size: 1.2em;
+}
+.button{
+    display: flex;
+    justify-content: center;    
+	color: #fff;
+    background-color: #5f2966;
+    font-weight: 600;
+    border-radius: 30px;
+    outline: none;
+    transition: background-color .1s ease;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;    
+    align-self: center;
+    z-index: 2;
+}
+.button:hover {
+    background: rgba(0,0,0,0);
+    color: #5f2966;
+    box-shadow: inset 0 0 0 1px #3a7999;
+}
+.b1{
+    padding: 0.8em 1.4em;
+    margin-left: 1.9em;
+    font-weight: 500;
+    box-shadow: 1px 7px 11px 2px #6587d4;
+}
+.language{
+    display: flex;
+    align-items: center;
+    margin-left: 9.3em;
+}
+.language ul{
+    display: flex;
+    font-size: 0.7em;
+}
+.language li{
+    padding: 0.55em;
+}
+.language li:not(:first-child):before{
+    content: "/ ";
+}
+.language li:hover{
+    color:#5f2966;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+.about{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.secure{
+    display: grid;
+    font-size: 1.5em;
+}
+.secure p:first-child{
+    font-size: 2em;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+.secure > *{
+    padding: 0.4rem;
+    justify-self: center;
+    letter-spacing: 0.1em;
+}
+.secure div{
+    display: flex;
+    font-size: 0.5em;
+    padding-bottom: 5em;
+    padding-top: 4.5em;
+}
+.secure div::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    opacity: 0.6;
+    max-width: 340px;
+    box-shadow: -19px 20px 14px 8px #6587d4;
+}
+.secure span{
+    color: #fc7b7d;
+}
+.b2{
+    padding: 1.5em 4em;   
+    box-shadow: 2px 9px 16px #6587d4, -27px 17px 94px #6587d4;
+}
+.b3{
+    padding: 0.8em;
+    opacity: .79;
+    margin-left: 1em;
+    font-weight: 100;
+    font-size: 1.3em;
+}
