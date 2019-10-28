@@ -1,6 +1,10 @@
 @import "./reset.css" all;
 @import "./media.css" all;
 
+@font-face {
+    font-family: 'Malaga';
+    src: url("../fonts/MalagaOT-MedItalic.otf");
+}
 
 body{
     max-width: 1400px;
@@ -21,10 +25,12 @@ header{
     height: 5vh;
     grid-template-columns: 31% 44% 25%;
     align-items: center;
+    color: #555555;
 }
 .logo{
     display: flex;
     justify-content: center;
+    color: #858688;
 }
 .logo span{
     color:#5b4295;
@@ -40,6 +46,11 @@ header{
 }
 .nav li{
     margin-left: 1.5em;
+}
+.nav li:hover{
+    color:#5f2966;
+    font-size: 1.1em;
+    text-decoration: underline;
 }
 .nav1{
     display: none;
@@ -86,7 +97,9 @@ header{
 .language{
     display: flex;
     align-items: center;
-    margin-left: 9.3em;
+    width: 35%;
+    justify-content: center;
+    color: #b5b5b5;
 }
 .language ul{
     display: flex;
@@ -111,11 +124,12 @@ header{
 .secure{
     display: grid;
     font-size: 1.5em;
+    color: #636363;
 }
 .secure p:first-child{
     font-size: 2em;
     letter-spacing: normal;
-    font-weight: 700;
+    font-weight: 700;    
 }
 .secure > *{
     padding: 0.4rem;
@@ -133,7 +147,7 @@ header{
     position: absolute;
     width: 90%;
     opacity: 0.6;
-    max-width: 340px;
+    max-width: 28em;
     box-shadow: -19px 20px 14px 8px #6587d4;
 }
 .secure span{
@@ -149,4 +163,138 @@ header{
     margin-left: 1em;
     font-weight: 100;
     font-size: 1.3em;
+}
+.fixed{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.socialList{
+    display: inline;
+    position: fixed;
+    top: 33%;
+    padding: 1em;
+}
+.itemSocial{
+    display: flex;
+    width: 2em;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.5em;
+    background-color: #676766;
+    margin: 1em;
+    border-radius: 3px;
+}
+.face:hover{
+    background-color: rgb(59,89,152);
+    border-radius:0px;
+    opacity:1;
+}
+.twit:hover{
+    background-color: rgb(29,202,255);
+    border-radius:0px;
+    opacity:1;
+}
+.plus:hover{
+    background-color: rgb(211,72,54);
+    border-radius:0px;
+    opacity:1;
+}
+.container{
+    max-width: 920px;
+    margin: auto;
+}
+.info{
+    display: grid;
+    grid-gap: 9em;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 0.7em;
+    margin-top: 1.8em;
+    color: #999797;
+}
+.info > div{
+    display: grid;
+    grid-auto-rows: 1fr 2fr;
+}
+.info h2{
+    font-weight: normal;
+    font-size: 2em;
+    letter-spacing: 0.04em;
+    word-spacing: -0.1em;
+    white-space: nowrap;
+    color: #454545;
+}
+.info h3{
+    font-weight: normal;
+    letter-spacing: 0.04em;
+}
+.info img{
+    margin-right: 0.8em;
+}
+.info p{
+    justify-content: center;
+    margin: 1em 0 0 1em;
+    line-height: 1.5em;
+}
+.moreInfo{
+    display: grid;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #535353;
+    margin-top: 3.7em;
+    margin-right: 8.5em;
+}
+.moreInfo h2{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 0.2em;
+}
+.moreInfo span{
+    color: red;
+}
+.b5 {
+    font-weight: 100;
+    border: 1px solid #b9b9b9;
+    background-color: white;
+    color: #b9b9b9;
+    margin-top: 1.5em;
+    margin-left: 40em;
+    padding: 1.5em;
+    width: 24%;
+    font-size: 0.8em;
+}
+.news img{
+    margin: 1.2em;
+}
+.newsQuote{
+    display: flex;
+    font-family: Malaga, serif;
+    font-size: 1.2em;
+    width: 34%;
+    margin: 2em;
+    margin-left: 14.3em;
+}
+.dots div{
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #b7b7b7;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+.dots div:first-child{
+    background-color: black;
+}
+.quote{
+    margin-left: 0.5em;
+}
+.quote p:first-child{
+    line-height: 1.3em;
+}
+.quote p:last-child{
+    font-size: 0.6em;
+    color: #727272;
+    margin-top: 1em;
 }
