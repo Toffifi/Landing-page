@@ -266,15 +266,18 @@ header{
     width: 24%;
     font-size: 0.8em;
 }
+.news{
+    margin: 2em;
+}
 .news img{
-    margin: 1.2em;
+    margin-right: 2em;
 }
 .newsQuote{
     display: flex;
     font-family: Malaga, serif;
     font-size: 1.2em;
     width: 34%;
-    margin: 2em;
+    margin: 2.5em;
     margin-left: 14.3em;
 }
 .dots div{
@@ -282,13 +285,13 @@ header{
     width: 0.5em;
     background-color: #b7b7b7;
     border-radius: 50%;
-    margin: 0.5em;
+    margin: 0.4em;
 }
 .dots div:first-child{
     background-color: black;
 }
 .quote{
-    margin-left: 0.5em;
+    margin-left: 0.6em;
 }
 .quote p:first-child{
     line-height: 1.3em;
@@ -296,5 +299,81 @@ header{
 .quote p:last-child{
     font-size: 0.6em;
     color: #727272;
-    margin-top: 1em;
+    margin-top: 0.7em;
+}
+.notebookSect{
+    height: 90vh;
+    max-height: 650px;
+    background-size: contain;
+    background-position: center top;
+}
+.downloadApp{
+    display: grid;
+    margin: 5.7em auto;
+    width: 25%;
+    text-align: end;
+    padding-right: 2em;
+}
+.downloadApp h2{
+    font-size: 1.8em;
+    font-weight: normal;
+    color: #535353;
+}
+.downloadApp p{
+    justify-self: end;
+    font-size: 0.8em;
+    margin-top: 1.2em;
+    color: #979595;
+    line-height: 1.4em;
+}
+.downloadApp div{
+    margin-top: 1.2em;
+}
+.donate{
+    margin: 1em auto;
+    width: 36%;
+}
+.donate h2{
+    font-weight: normal;
+    font-size: 1.7em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #535353;
+}
+.donate p{
+    font-size: 1.5em;
+    letter-spacing: -0.02em;
+    margin-top: 0.4em;
+    color: #7c7c7c;
+}
+.donate div{
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+}
+.b6{
+    padding: 1em 1.3em;
+    font-size: 0.9em;
+    margin-right: 2.5em;
+}
+.b7{
+    padding: 1em 2.4em;
+    font-size: 0.9em;
+    background-color: #5e7bea;
+}
+.donate i{
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+.whoDonate{
+    margin: 5em auto;
+    width: 53%;
+    text-align: end;
+}
+.whoDonate p{
+    font-size: 0.7em;
+    color: #727272;
+}
+.whoDonate img{
+    margin: 1.2em 0 0 1.3em;
 }
