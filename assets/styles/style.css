@@ -16,19 +16,19 @@ header{
     background-size: cover;
     background-position: center top;
     display: grid;
-    grid-template-rows: 13% 5% 70%;
+    grid-template-rows: 13% 7% 73%;
 }
 .top{
     display: grid;
-    margin-top: 4%;
-    grid-template-columns: 31% 44% 25%;
-    align-items: center;
+    grid-template-columns: 31% 44% 24%;
+    align-items: end;
     color: #555555;
 }
 .logo{
     display: flex;
     justify-content: center;
     color: #858688;
+    font-size: 1.4em;
 }
 .logo span{
     color:#5b4295;
@@ -40,10 +40,10 @@ header{
 }
 .nav{
     display: flex;
-    margin-right: 0.5em;
+    margin-bottom: 0.3em;
 }
 .nav li{
-    margin-left: 1.5em;
+    margin-left: 1.46em;
     transition: font-size 0.25s ease;
 }
 .nav li:hover{
@@ -56,9 +56,11 @@ header{
 }
 .sing ul{
     display: flex;
+    position: relative;
+    top: 6px;
     font-size: 0.75em;
     font-weight: 800;
-    margin-left: 4.5em;
+    margin-left: 4.2em;
     letter-spacing: 0.06em;
     align-items: center;
     white-space: nowrap;
@@ -91,15 +93,15 @@ header{
     box-shadow: inset 0 0 0 1px #3a7999;
 }
 .b1{
-    padding: 0.8em 1.3em;
-    margin: 0 1.5em;
-    font-weight: 500;
+    padding: 0.8em 1.25em;
+    margin: 0 1.2em;
+    font-weight: 600;
     box-shadow: 1px 7px 12px 0px #6277cd;
 }
 .language{
     display: flex;
     align-items: center;
-    width: 35%;
+    width: 36%;
     justify-content: center;
     color: #b5b5b5;
 }
@@ -108,11 +110,11 @@ header{
     font-size: 0.7em;
 }
 .language li{
-    padding: 0.55em;
     transition: font-size 0.25s ease;
 }
 .language li:not(:first-child):before{
     content: "/ ";
+    padding: 0.56em;
 }
 .language li:hover{
     color:#5f2966;    
@@ -121,7 +123,6 @@ header{
 }
 .about{
     display: grid;
-    justify-content: center;
     align-items: center;
 }
 .secure{
@@ -131,19 +132,22 @@ header{
 }
 .secure p:first-child{
     font-size: 2em;
-    letter-spacing: normal;
-    font-weight: 700;    
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.03em;
+    word-spacing: 0.03em;
 }
 .secure > *{
     padding: 0.4rem;
     justify-self: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
+    font-size: 1.1em;
 }
 .secure div{
     display: flex;
     font-size: 0.5em;
     padding-bottom: 5em;
-    padding-top: 4.5em;
+    padding-top: 4em;
 }
 .secure div::after {
     content: "";
@@ -157,15 +161,29 @@ header{
     color: #fc7b7d;
 }
 .b2{
-    padding: 1.5em 4em;   
+    padding: 1.2em 3.6em;
+    font-size: 1.1em;
     box-shadow: 2px 9px 16px #6587d4, -27px 17px 94px #6587d4;
 }
-.b3{
-    padding: 0.8em;
+.b3, .b4 {
+    padding: 0.45em 0.6em;
     opacity: .79;
-    margin-left: 1em;
+    margin-left: 0.9em;
     font-weight: 100;
+    font-size: 1.5em;
+}
+.b4 {
+    padding: 0.6em;
     font-size: 1.3em;
+}
+.fa-apple{
+    position: relative;
+    bottom: 1px;
+}
+.fa-google-play{
+    position: relative;
+    left: 1px;
+    top: 1px;
 }
 .fixed{
     display: flex;
@@ -175,7 +193,7 @@ header{
 .socialList{
     display: inline;
     position: fixed;
-    top: 33%;
+    top: 35%;
     padding: 1em;
 }
 .itemSocial{
@@ -187,7 +205,7 @@ header{
     color: white;
     font-size: 0.5em;
     background-color: #676766;
-    margin: 1em;
+    margin: 1.2em;
     border-radius: 3px;
 }
 .face:hover{
@@ -211,30 +229,37 @@ header{
 }
 .info{
     display: grid;
-    grid-gap: 9em;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.5em;
+    grid-template-columns: 33% 29% 34%;
     font-size: 0.7em;
-    margin-top: 1.8em;
+    margin-top: 5.5em;
+    letter-spacing: -0.015em;
+    word-spacing: -0.025em;
     color: #999797;
 }
 .info > div{
     display: grid;
     grid-auto-rows: 1fr 2fr;
 }
+.info1{
+    margin-left: 1.4em;
+}
+.info3{
+    margin-left: 2em;
+}
 .info h2{
     font-weight: normal;
     font-size: 2em;
-    letter-spacing: 0.04em;
-    word-spacing: -0.1em;
+    letter-spacing: 0.02em;
     white-space: nowrap;
     color: #454545;
 }
 .info h3{
     font-weight: normal;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
 }
 .info img{
-    margin-right: 0.8em;
+    margin-right: 0.6em;
 }
 .info p{
     justify-content: center;
@@ -247,13 +272,16 @@ header{
     font-size: 1.2em;
     font-weight: 400;
     color: #535353;
-    margin-top: 3.7em;
+    margin-top: 2.9em;
     margin-right: 8.5em;
+    letter-spacing: -0.015em;
+    line-height: .9em;
 }
 .moreInfo h2{
     font-size: 3rem;
     font-weight: 100;
-    margin-bottom: 0.2em;
+    letter-spacing: -0.015em;
+    line-height: 1.4em;
 }
 .moreInfo span{
     color: red;
@@ -265,7 +293,7 @@ header{
     color: #b9b9b9;
     margin-top: 1.5em;
     margin-left: 40em;
-    padding: 1.5em;
+    padding: 1.2em;
     width: 24%;
     font-size: 0.8em;
 }
@@ -273,15 +301,17 @@ header{
     margin: 2em;
 }
 .news img{
-    margin-right: 2em;
+    margin-right: 1.5em;
 }
 .newsQuote{
     display: flex;
     font-family: Malaga, serif;
     font-size: 1.2em;
-    width: 34%;
-    margin: 2.5em;
-    margin-left: 14.3em;
+    width: 33%;
+    margin: 2.6em;
+    margin-left: 13.8em;
+    letter-spacing: -0.02em;
+    word-spacing: -0.02em;
 }
 .dots div{
     height: 0.5em;
@@ -297,62 +327,69 @@ header{
     margin-left: 0.6em;
 }
 .quote p:first-child{
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 .quote p:last-child{
     font-size: 0.6em;
     color: #727272;
-    margin-top: 0.7em;
+    margin-top: 0.8em;
+    letter-spacing: 0.02em;
+    word-spacing: 0.04em;
 }
 .notebookSect{
-    height: 90vh;
+    height: 95vh;
     max-height: 650px;
     background-size: contain;
     background-position: center top;
 }
 .downloadApp{
     display: grid;
-    margin: 5.7em auto;
+    margin: 5.5em auto;
     width: 25%;
     text-align: end;
-    padding-right: 2em;
+    padding-right: 1.6em;
 }
 .downloadApp h2{
     font-size: 1.8em;
     font-weight: normal;
     color: #535353;
+    letter-spacing: -0.02em;
 }
 .downloadApp p{
     justify-self: end;
-    font-size: 0.8em;
-    margin-top: 1.2em;
+    font-size: 0.75em;
+    word-spacing: 0.01em;
+    font-weight: 600;
+    margin-top: 1.1em;
     color: #979595;
+    letter-spacing: -0.01em;
     line-height: 1.4em;
 }
 .downloadApp div{
     display: flex;
-    margin: 1.2em 0;
+    margin: 1.4em 0;
     justify-content: flex-end;
+    position: relative;
+    left: 5px;
 }
 .downloadApp a{
     margin-left: 0.5em;
 }
 .donate{
-    margin: 1em auto;
+    margin: 2em auto;
     display: grid;
     justify-content: center;
 }
 .donate h2{
     font-weight: normal;
     font-size: 1.7em;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.001em;
     text-align: center;
     color: #535353;
 }
 .donate p{
     font-size: 1.5em;
-    letter-spacing: -0.02em;
-    margin-top: 0.4em;
+    letter-spacing: -0.03em;
     color: #7c7c7c;
 }
 .donate div{
@@ -361,7 +398,7 @@ header{
     justify-content: center;
 }
 .b6{
-    padding: 1em 1.3em;
+    padding: 1em;
     font-size: 0.9em;
     margin-right: 2.5em;
     box-shadow: 1px 7px 15px 0px #646c92;
@@ -377,28 +414,31 @@ header{
     margin-right: 0.5em;
 }
 .whoDonate{
-    margin: 5em auto;
+    margin: 4.8em auto;
     display: grid;
     justify-content: center;
-    padding-left: 3em;
+    padding-left: 1.2em;
     text-align: end;
 }
 .whoDonate p{
-    font-size: 0.7em;
+    font-size: 0.68em;
+    font-weight: 600;
     color: #727272;
+    word-spacing: -0.06em;
+    letter-spacing: -0.01em;
 }
 .whoDonate img{
-    margin: 1.2em 0 0 1.3em;
+    margin: 1em 0 0 1.4em;
 }
 footer{
     display: grid;
-    height: 265px;
+    height: 260px;
     grid-template-columns: 20% 32% 18% 14%;
-    grid-template-rows: 66% 26%;
+    grid-template-rows: 64% 25%;
     margin: 9.6em auto 0 auto;
     width: 78%;
     font-size: 0.7em;
-    align-items: center;    
+    align-items: center;
     color: #5c5c5c;
 }
 footer li::after{
@@ -409,9 +449,10 @@ footer li::after{
     text-align: end;
 }
 .list h3{
-    margin-bottom: 2em;
-    margin-right: 0.7em;
+    margin-bottom: 1.65em;
+    margin-right: 0.6em;
     font-weight: 600;
+    letter-spacing: 0.03em;
 }
 .list li{
     margin: 0.6em;
@@ -419,6 +460,7 @@ footer li::after{
 .contact{
     font-weight: 600;
     line-height: 1.5em;
+    letter-spacing: -0.02em;
     margin-left: 1.5em;
     margin-bottom: 2.4em;
 }
@@ -428,9 +470,11 @@ footer li::after{
 .contact div{
     margin-top: 2em;
 }
-footer div:last-child{
+.copy{
+    font-size: 0.9em;
+    font-weight: 600;
     align-self: end;
-    letter-spacing: -0.07em;
+    letter-spacing: -0.06em;
     word-spacing: 0.05em;
 }
 .nav1{
